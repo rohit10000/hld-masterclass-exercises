@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:3.6.1'
+    implementation 'co.elastic.clients:elasticsearch-java:9.0.0'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-client:9.0.0'
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.2'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
