@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week1/chat-socket-io/socket.io-chat-platform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week1/rabbitmq-handson" vcs="Git" />
   </component>
 </project>
