@@ -18,7 +18,12 @@ public class MySQLConnection implements AutoCloseable {
         try {
             createSourceConnection();
             createReplicaConnection();
-            createProxySqlConnection();
+            /* Todo: proxy sql connection failing to connect. some issue in the docker
+                [docker logs -f proxysql] giving error message: Error during query on (1,host.docker.internal,3306,889): 1193,
+                Unknown system variable 'query_cache_size'
+            */
+             createProxySqlConnection();
+
         } catch (SQLException e) {
             closeConnections();
             System.out.println(Arrays.toString(e.getStackTrace()));
