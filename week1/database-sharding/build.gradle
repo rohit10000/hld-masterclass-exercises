@@ -13,7 +13,7 @@ dependencies {
     implementation 'org.apache.kafka:kafka-clients:3.9.1'
     implementation 'co.elastic.clients:elasticsearch-java:9.0.0'
     implementation 'org.elasticsearch.client:elasticsearch-rest-client:9.0.0'
-    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation("com.mysql:mysql-connector-j:9.3.0")
     implementation 'org.apache.httpcomponents.client5:httpclient5:5.2'
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'

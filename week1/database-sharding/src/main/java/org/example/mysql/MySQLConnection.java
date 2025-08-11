@@ -6,21 +6,35 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Arrays;
 
 @Getter
 public class MySQLConnection implements AutoCloseable {
     private Connection sourceConnection;
     private Connection replicaConnection;
+    private Connection proxySqlConnection;
 
     public MySQLConnection() {
         try {
             createSourceConnection();
             createReplicaConnection();
+            createProxySqlConnection();
         } catch (SQLException e) {
             closeConnections();
-            throw new RuntimeException("Failed to establish database connections", e);
+            System.out.println(Arrays.toString(e.getStackTrace()));
+            throw new RuntimeException("Failed to establish database connections:", e);
         }
     }
+
+    private void createProxySqlConnection() throws SQLException {
+        proxySqlConnection = DriverManager.getConnection(
+                DatabaseConfig.PROXY_SQL_URL,
+                DatabaseConfig.PROXY_SQL_USERNAME,
+                DatabaseConfig.PROXY_SQL_PASSWORD
+        );
+        validateConnection(proxySqlConnection, "proxy sql");
+    }
+
 
     private void createSourceConnection() throws SQLException {
         sourceConnection = DriverManager.getConnection(
@@ -64,6 +78,13 @@ public class MySQLConnection implements AutoCloseable {
                 replicaConnection.close();
             } catch (SQLException e) {
                 System.err.println("Error closing replica connection: " + e.getMessage());
+            }
+        }
+        if (proxySqlConnection != null) {
+            try {
+                proxySqlConnection.close();
+            } catch (SQLException e) {
+                System.err.println("Error closing proxy-sql connection: " + e.getMessage());
             }
         }
         System.out.println("Connection closed successfully.");
