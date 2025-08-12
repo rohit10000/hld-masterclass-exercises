@@ -83,3 +83,10 @@ Feel free to add repository layer.
 The database i will use is mysql database:
 with the following credentials:
     host: localhost, port: 3306, u - root, p - rohitsingh, database - hertever
+
+Client:
+    main():
+        order_id = uuid;
+        reserve agent, reserve food, book agent and book food
+        All these will run in serial.
+        if all these succeed then success else failure.
