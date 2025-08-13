@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19e5099-650a-4fb0-b1ba-e4dae0df9088" name="Changes" comment="" />
+    <list default="true" id="42ef8c62-05ae-4698-8bf3-de415d3f9cdb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
+    <projectState path="$PROJECT_DIR$/food-agent">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="food-agent" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,36 +40,35 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="31BPdiqIDSGYZGEob6v87SqjR9v" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="31BD8xEGk83xw0XPKlIX3CybcaL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.order-client [:org.hertever.Client.main()].executor": "Run",
+    "Gradle.food-agent [:com.hertever.food_agent.FoodAgentApplication.main()].executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/shwetasingh/Development/hld-materclass-exercises/week2/distributed-transactions-2pc/order-client/src/main/java/org/hertever/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "/Users/shwetasingh/Development/hld-materclass-exercises/week2/distributed-transactions-2pc"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.hertever.Client" />
-      <module name="order-client.main" />
+    <configuration name="FoodAgentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hertever.food_agent.FoodAgentApplication" />
+      <module name="food-agent.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hertever.*" />
+          <option name="PATTERN" value="com.hertever.food_agent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,18 +78,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.FoodAgentApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c19e5099-650a-4fb0-b1ba-e4dae0df9088" name="Changes" comment="" />
-      <created>1754994582241</created>
+      <changelist id="42ef8c62-05ae-4698-8bf3-de415d3f9cdb" name="Changes" comment="" />
+      <created>1754988416989</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754994582241</updated>
+      <updated>1754988416989</updated>
     </task>
     <servers />
   </component>
@@ -81,14 +97,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hertever/Order.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/hertever/Order.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/food-agent/src/main/java/com/hertever/food_agent/controller/FoodController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
